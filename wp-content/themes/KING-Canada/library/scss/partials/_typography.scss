@@ -1,0 +1,272 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Typography
+
+Need to import a font or set of icons for your site? Drop them in
+here or just use this to establish your typographical grid. Or not.
+Do whatever you want to...GOSH!
+
+Helpful Articles:
+http://trentwalton.com/2012/06/19/fluid-type/
+http://ia.net/blog/responsive-typography-the-basics/
+http://alistapart.com/column/responsive-typography-is-a-physical-discipline
+
+******************************************************************/
+
+
+/*********************
+FONT FACE (IN YOUR FACE)
+*********************/
+
+/*  To embed your own fonts, use this syntax
+  and place your fonts inside the
+  library/fonts folder. For more information
+  on embedding fonts, go to:
+  http://www.fontsquirrel.com/
+  Be sure to remove the comment brackets.
+*/
+
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('../../library/fonts/HelveticaNeueLTStd-Lt.eot?') format('eot'), 
+	     url('../../library/fonts/HelveticaNeueLTStd-Lt.otf')  format('opentype'),
+	     url('../../library/fonts/HelveticaNeueLTStd-Lt.woff') format('woff'), 
+	     url('../../library/fonts/HelveticaNeueLTStd-Lt.ttf')  format('truetype'),
+	     url('../../library/fonts/HelveticaNeueLTStd-Lt.svg#HelveticaNeueLTStd-Lt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+@font-face {
+font-family: 'HelveticaNeue';
+	src: url('../../library/fonts/HelveticaNeueLTStd-Lt.svg#HelveticaNeueLTStd-Lt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+}
+
+
+
+@font-face {
+	font-family: 'Knockout';
+	src: url('../../library/fonts/Knockout-HTF90-UltmtWelterwt.eot?') format('eot'), 
+	     url('../../library/fonts/Knockout-HTF90-UltmtWelterwt.otf')  format('opentype'),
+	     url('../../library/fonts/Knockout-HTF90-UltmtWelterwt.woff') format('woff'), 
+	     url('../../library/fonts/Knockout-HTF90-UltmtWelterwt.ttf')  format('truetype'),
+	     url('../../library/fonts/Knockout-HTF90-UltmtWelterwt.svg#Knockout-HTF90-UltmtWelterwt') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+@font-face {
+font-family: 'Knockout';
+	src: url('../../library/fonts/Knockout-HTF90-UltmtWelterwt.svg#Knockout-HTF90-UltmtWelterwt') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+}
+
+
+
+@font-face {
+	font-family: 'Knockout';
+	src: url('../../library/fonts/Knockout-HTF30-JuniorWelterwt.eot?') format('eot'), 
+	     url('../../library/fonts/Knockout-HTF30-JuniorWelterwt.otf')  format('opentype'),
+	     url('../../library/fonts/Knockout-HTF30-JuniorWelterwt.woff') format('woff'), 
+	     url('../../library/fonts/Knockout-HTF30-JuniorWelterwt.ttf')  format('truetype'),
+	     url('../../library/fonts/Knockout-HTF30-JuniorWelterwt.svg#Knockout-HTF30-JuniorWelterwt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+@font-face {
+font-family: 'Knockout';
+	src: url('../../library/fonts/Knockout-HTF30-JuniorWelterwt.svg#Knockout-HTF30-JuniorWelterwt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+}
+
+
+
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../../library/fonts/icomoon.eot?h9rj6y');
+	src:url('../../library/fonts/icomoon.eot?#iefixh9rj6y') format('embedded-opentype'),
+		url('../../library/fonts/icomoon.woff?h9rj6y') format('woff'),
+		url('../../library/fonts/icomoon.ttf?h9rj6y') format('truetype'),
+		url('../../library/fonts/icomoon.svg?h9rj6y#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+@font-face {
+	font-family: 'icomoon';
+	src:url('../../library/fonts/icomoon.svg?h9rj6y#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cal:before {
+	content: "\e600";
+}
+.icon-check:before {
+	content: "\e601";
+}
+.icon-ex:before {
+	content: "\e602";
+}
+.icon-print:before {
+	content: "\e603";
+}
+.icon-mail:before {
+	content: "\e604";
+}
+.icon-menu:before {
+	content: "\e605";
+}
+.icon-right:before {
+	content: "\e606";
+}
+.icon-left:before {
+	content: "\e607";
+}
+.icon-service:before {
+	content: "\e608";
+}
+.icon-location:before {
+	content: "\e609";
+}
+.icon-manual:before {
+	content: "\e60a";
+}
+.icon-lang:before {
+	content: "\e60b";
+}
+.icon-fbook:before {
+	content: "\e60c";
+}
+.icon-haircross:before {
+	content: "\e60d";
+}
+.icon-mag:before {
+	content: "\e60e";
+}
+.icon-svg16:before {
+	content: "\e60f";
+}
+
+
+
+/*
+@font-face {
+	font-family: 'Knockout';
+	src: url('../../library/fonts/Knockout-HTF70-FullWelterwt.eot?') format('eot'), 
+	     url('../../library/fonts/Knockout-HTF70-FullWelterwt.otf')  format('opentype'),
+	     url('../../library/fonts/Knockout-HTF70-FullWelterwt.woff') format('woff'), 
+	     url('../../library/fonts/Knockout-HTF70-FullWelterwt.ttf')  format('truetype'),
+	     url('../../library/fonts/Knockout-HTF70-FullWelterwt.svg#Knockout-HTF70-FullWelterwt') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+@font-face {
+	font-family:  'Knockout';
+	src: url('../../library/fonts/Knockout-HTF70-FullWelterwt.svg#Knockout-HTF70-FullWelterwt') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+}
+
+@font-face {
+	font-family: 'Knockout';
+	src: url('../../library/fonts/Knockout-HTF49-Liteweight.eot?') format('eot'), 
+	     url('../../library/fonts/Knockout-HTF49-Liteweight.otf')  format('opentype'),
+	     url('../../library/fonts/Knockout-HTF49-Liteweight.woff') format('woff'), 
+	     url('../../library/fonts/Knockout-HTF49-Liteweight.ttf')  format('truetype'),
+	     url('../../library/fonts/Knockout-HTF49-Liteweight.svg#Knockout-HTF49-Liteweight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+@font-face {
+	font-family: 'Knockout';
+	src: url('../../library/fonts/Knockout-HTF49-Liteweight.svg#Knockout-HTF49-Liteweight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+}
+*/
+
+
+/*
+The following is based of Typebase:
+https://github.com/devinhunt/typebase.css
+I've edited it a bit, but it's a nice starting point.
+*/
+
+
+// font stacks
+$sans-serif:        "HelveticaNeue", Helvetica, Arial, sans-serif;
+$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+
+/*
+ i imported this one in the functions file so bones would look sweet.
+ don't forget to remove it for your site.
+*/
+$lato:              'Lato', $sans-serif;
+$knockout:			 	"Knockout", $sans-serif;
+
+/*
+some nice typographical defaults
+more here: http://www.newnet-soft.com/blog/csstypography
+*/
+p {
+  -ms-word-break: break-all;
+  -ms-word-wrap: break-all;
+      word-break: break-word;
+     word-break: break-word;
+  // cleaning up the ragged lines and breaks
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+          hyphens: auto;
+  // sets a minimum number of characters before and after the break
+  -webkit-hyphenate-before: 2;
+   -webkit-hyphenate-after: 3;
+           hyphenate-lines: 3;
+  // enabling fancy ligatures when available
+  -webkit-font-feature-settings: "liga", "dlig";
+   -moz-font-feature-settings: "liga=1, dlig=1";
+      -ms-font-feature-settings: "liga", "dlig";
+       -o-font-feature-settings: "liga", "dlig";
+          font-feature-settings: "liga", "dlig";
+  // disabling user agent margin
+  -webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+}
+

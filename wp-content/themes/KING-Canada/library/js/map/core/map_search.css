@@ -1,0 +1,260 @@
+.dealerLocator ul {overflow: auto}
+.search-results.loading:before {
+    position: fixed;
+    top: 70%;
+    left: 70%;
+}
+
+.map {
+	position: relative;
+	width: 783px;
+	height: 650px;
+	right: 0;
+	opacity: 0;
+}
+
+.map:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    right: 0;
+    -webkit-box-shadow: inset -1px 0 1px rgba(0,0,0,0.3);
+    box-shadow: inset -1px 0 1px rgba(0,0,0,0.3);
+    width: 2px;
+    z-index: 2;
+}
+
+.map-refresh-controls {
+    position: absolute;
+    top: 5px;
+    right: 2px;
+}
+
+.map-refresh-controls.touch {
+    left: 40px;
+}
+
+.map-manual-refresh {
+    padding: 8px;
+}
+
+.map-auto-refresh {
+    padding: 3px 8px;
+}
+
+.map-canvas {
+    height: 100%;
+}
+
+
+.infoBox {
+    padding: 4px;
+    background: #fff;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.infoBox:before {
+    border-color: #fff transparent transparent transparent;
+    border-width: 15px;
+    border-style: solid;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: -30px;
+    margin: 0 0 0 115px;
+}
+
+.close-box {
+    font-weight: bold;
+    z-index: 2;
+    color: #959595;
+    font-size: 22px;
+    line-height: 13px;
+    padding: 3px;
+    text-align: center;
+    height: 25px;
+    width: 25px;
+    top: -15px;
+    right: -15px;
+    cursor: pointer;
+    position: absolute;
+    border: 1px solid #ccc;
+    background: #fff;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+    -moz-border-radius: 18px;
+    -webkit-border-radius: 18px;
+    border-radius: 18px;
+}
+
+.close-box:hover {
+    color: #393c3d;
+}
+
+.close-box:active {
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.instant-book-button {
+    margin-bottom: 4px;
+	font-size: 13px;
+}
+/*
+.search-results .close-box {
+    display: none;
+}
+*/
+.map-canvas .listing {
+    margin: 0;
+    width: 260px;
+    height: auto;
+}
+
+.map-canvas .listing-footer {
+    background: #fff;
+}
+
+.loading .listing-name,.loading .listing-review-count,.loading .wish_list_button,.loading .instant-book-button {
+    display: none;
+}
+
+.loading .listing-img .img-border,.loading .listing-img .target-next,.loading .listing-img .target-prev {
+    display: none;
+}
+
+
+
+.pac-container {
+    background: #fff;
+    border-top: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.pac-item-query {
+    color: #6f6f6f;
+}
+
+.pac-item {
+    border-bottom: #6f6f6f;
+    overflow: hidden;
+    padding: 0.3em 0.8em;
+}
+
+.pac-item:hover,.pac-item.pac-selected {
+    background: #00b0ff;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.pac-item:hover .pac-item-query,.pac-item.pac-selected .pac-item-query {
+    color: #fff;
+}
+
+.pac-item:nth-child(odd) {
+    background: #f7f7f7;
+}
+
+.pac-item:nth-child(odd):hover,.pac-item:nth-child(odd).pac-selected {
+    background: #00b0ff;
+}
+
+.pac-container,.pac-container .pac-item:last-child {
+    -moz-border-radius: 0 0 2px 2px;
+    -webkit-border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2px 2px;
+}
+
+.pac-container:after {
+content: "";
+height: 1px !important;
+background-image: none !important;
+}
+
+/*-  -*/
+.maparea {
+	position: absolute;
+	top: 0;
+	right: 0;	
+}
+
+.dealerLocator ul {
+	width: 313px;
+	height: 556px;
+}
+ul.location_holder{
+	height: 94px;
+}
+
+.hide {display: none !important;}
+
+
+.map-refresh-controls label {
+	display: table;
+	width: 137px;
+	height: 70px;
+	text-align: center;
+	background: #000;
+	padding: 15px 10px 10px 10px;
+	vertical-align: middle;
+	font-family: "nimbus-sans-condensed", "HelveticaNeue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+	color: #ffffff;
+	position: relative;
+	left: 1px;
+	line-height: 120%;
+}
+
+.map label {
+	width: 200px;
+	font-size: 13px;
+	height: 45px;
+}
+
+.dealerLocator .tab label { padding: 25px 10px 10px 10px}
+
+.map label:hover {
+background: #3c80c2;
+cursor: pointer;
+}
+a.map-manual-refresh {
+	background-color: #2badf3;
+	background-image: -webkit-linear-gradient(#2badf3, #2492db);
+	background-image: linear-gradient(#2badf3, #2492db);
+	border: 1px solid #106fa9;
+	color: #fff;
+	/*text-shadow: 0 -1px 0 rgba(0,0,0,0.2);*/
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.18),inset 0 0 1px 1px rgba(255,255,255,0.09);
+	padding: 8px; 
+	font-size: 13px;
+	display: inline-block;
+	margin-bottom: 0;
+	border-radius: 2px;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: normal;
+	font-family:arial;
+	line-height: 1.4;
+	-webkit-user-select: none;
+	right: 10px;
+	position: relative;
+	cursor:pointer;
+}
+
+div.maparea .callout {
+	font-family: arial;
+	color: #000;
+	font-weight: normal;
+	display: block;
+	margin: 0 auto;
+	width: 575px;
+	padding-top: 10px;
+}

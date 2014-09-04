@@ -1,0 +1,94 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop.
+
+******************************************************************/
+
+.wrap {
+  width: 1100px;
+}
+
+.nav {
+	border-bottom: 0;
+	margin: 0 auto;
+	width:1100px;
+
+	li {
+
+		a {
+			display: block;
+			color: $white;
+			text-decoration: none;
+			padding: 0px 33px;
+			font-family:$knockout;
+			text-transform:uppercase;
+			font-size:18px;
+			height:50px;
+			line-height:50px;
+			background:$king-softblue;
+			margin-right:1px;
+			text-shadow:1px 1px 5px #000;
+
+			/*
+			remember this is for mobile ONLY, so there's no need
+			to even declare hover styles here, you can do it in
+			the style.scss file where it's relevant. We want to
+			keep this file as small as possible!
+			*/
+			&:hover, &:focus {
+				text-decoration:none !important;
+				background:lighten($king-softblue, 6%);
+			}
+		}
+
+		&:first-child {}
+
+		&:last-child {}
+
+		/*
+		so you really have to rethink your dropdowns for mobile.
+		you don't want to have it expand too much because the
+		screen is so small. How you manage your menu should
+		depend on the project. Here's some great info on it:
+		http://www.alistapart.com/articles/organizing-mobile/
+		*/
+		ul.sub-menu,
+		ul.children {
+
+			li {
+
+				a {
+					padding-left: 30px;
+
+					&:hover,
+					&:focus {}
+
+					&:link {}
+
+				}
+
+				&:first-child {}
+
+				&:last-child {}
+
+			}
+
+		}
+
+	} /* end .menu li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current_page_ancestor {
+
+		a {}
+
+	}  /* end current highlighters */
+
+} /* end .nav */

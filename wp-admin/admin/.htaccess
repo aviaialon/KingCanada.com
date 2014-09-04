@@ -1,0 +1,60 @@
+# OPTIONS
+Options +FollowSymLinks -Multiviews
+
+# disable directory browsing
+Options All -Indexes
+
+# DEFAULT SERVER CONFIGURATIONS
+ServerSignature Off
+DefaultLanguage en-US
+SetEnv TZ America/Indianapolis
+SetEnv SERVER_ADMIN aviaialon@gmail.com
+AddDefaultCharset UTF-8
+
+# SECURE THE .ini FILE
+<Files *.ini>
+	order allow,deny
+	deny from all
+</Files>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{ENV:URI} ^$
+  RewriteRule ^(.*)$ - [ENV=URI:$1]
+
+  RewriteCond %{ENV:BASE} ^$
+  RewriteCond %{ENV:URI}::%{REQUEST_URI} ^(.*)::(.*?)\1$
+  RewriteRule ^ - [ENV=BASE:%2]
+
+ # -----------------------------------
+ # REMOVE THE DIRECTORY INDEX PAGE FROM THE URL (index.php, index.htm, index.html, default.php, default.htm, default.php)
+ # -----------------------------------
+ #RewriteRule ^/index\.php?$1 [L,QSA]
+ #RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s(.*)/index\.php [NC]
+ #RewriteRule ^ %1 [R=301,L]
+
+
+ # -----------------------------------
+ # Main request dispatcher redirection
+ # -----------------------------------
+ RewriteCond %{REQUEST_FILENAME} -s [OR]
+ RewriteCond %{REQUEST_FILENAME} -l [OR]
+ RewriteCond %{REQUEST_FILENAME} -d
+ RewriteCond %{REQUEST_URI} !^.*(\.gif|\.png|\.jpeg|\.jpg|\.css|\.js|\.ico|/404\.php)$
+ RewriteCond %{REQUEST_FILENAME} !^.*(\.gif|\.png|\.jpeg|\.jpg|\.css|\.js|\.ico|/404\.php)$
+ RewriteRule ^.*$ - [NC,L]
+
+ # Allow any files or directories that exist to be displayed directly
+ RewriteCond ${REQUEST_URI} ^.+$
+ RewriteCond %{REQUEST_FILENAME} \.(gif|jpe?g|png|js|css|swf|php|ico|txt|pdf|xml)$ [OR]
+ RewriteCond %{REQUEST_FILENAME} -f [OR]
+ RewriteCond %{REQUEST_FILENAME} -d [OR]
+ RewriteCond %{REQUEST_FILENAME} -l
+ RewriteRule ^ - [L]
+
+ 
+ #RewriteCond %{REQUEST_URI} !^.*(\.gif|\.png|\.jpeg|\.jpg|\.css|\.js|\.ico|/404\.php)$
+ #RewriteCond %{REQUEST_FILENAME} !^.*(\.gif|\.png|\.jpeg|\.jpg|\.css|\.js|\.ico|/404\.php)$
+ RewriteRule  ^(\/?sp|\/?fr|\/?en|\/?ch)?(.*)$ %{ENV:BASE}/index.php?path=$2&lang=$1&%{QUERY_STRING} [NC,L]
+ RewriteRule (.*) %{ENV:BASE}/index.php?path=$1&%{QUERY_STRING} [L,QSA]
+</ifModule>

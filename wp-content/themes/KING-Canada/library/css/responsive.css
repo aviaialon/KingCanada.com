@@ -1,0 +1,766 @@
+
+/*
+if you checked out the link above:
+http://www.alistapart.com/articles/organizing-mobile/
+you'll want to style the footer nav
+a bit more in-depth. Remember to keep
+it simple because you'll have to
+override these styles for the desktop
+view.
+*/
+
+@media only screen and (max-width: 640px) {
+	
+	.wrap {
+		width: 90%;
+	}
+	.one3rd {
+		height: auto;
+		min-height: 0;
+		margin-right: 0%;
+		width: 100%;
+	}
+	.homebox{
+		padding: 20px 25px 5px 25px	
+	}
+  	input{
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	}
+	
+	h1, .h1 {
+		font-size: 2em;
+		line-height: 1em;
+	}
+	
+
+	/* Top */
+	.header{
+		height: auto;	
+	}
+	
+	#inner-header{ 
+	height: auto;
+	 }
+	#logo {
+		margin: 12px 0 5px 0;
+		float: left;
+	}
+	#logo img{
+		width: 220px;
+	}
+	#logo a{
+		width: auto;
+		top: 10px;
+		position: static;
+		height: auto;
+	}
+	#searchArea, .lang_selector{
+		display: none;
+	}
+	
+	/* mobile menu */
+	#mobile-menu {
+		float: right;
+		margin-top: 18px;
+		
+	}
+		
+	/* menu */
+	#navcase{
+		display: none;
+		z-index: 1000;
+		position: absolute;	
+	}
+	.nav li{
+		border-bottom: 1px solid #00659B;	
+	}
+	
+	#rev_slider_5_2_wrapper{
+		display: none;	
+	}
+	
+	
+	/* banner */
+	.tp-bgimg img{
+		width: 150%;	
+	}
+	.banner{
+		position:relative;
+		margin-bottom:-15px;
+	}
+	.banner img{
+		width: 300%	
+	}
+	
+	/* sub menu */
+	.submenuHeader {
+		padding: 20px 0;
+	}
+	.submenugroup {	
+		left: 0;
+		top: 0;
+	}
+	.submenuHeader a{
+		top: 0;
+		font-size: 14px;
+		display: none;	
+	}
+	.submenuBody {
+		padding: 19px 40px 40px 0;
+	}
+
+	/* home page forms */
+	.homebox p {
+		color: black;
+		font-size: 14px;
+		padding-bottom: 10px;
+		margin: 0;
+	}
+	.homeboxes{
+		margin-bottom: 0px;	
+	}
+	.homebox select {
+		margin-bottom: 15px;
+	}
+	#homeParts form {
+		position: static;
+		top: 120px;
+		width: 100%;
+	}
+	.homebox form input {
+		width: 83%;
+	}
+	#homeParts form input{
+		width: 87%;
+	}
+	#dealersubmit{
+		margin: 0;	
+	}
+	#homeParts form input#searchsubmit{
+		float: right;
+		width: 40px;	
+	}
+	input#searchsubmit, #dealersubmit, #signupsubmit{
+		height: 39px;
+	}
+	#homeSignup{
+		padding-bottom: 15px;	
+	}
+	#homeSignup form {
+		position: static;
+		width: 100%;
+	}
+	#homeSignup form .field {
+		width: 73%;
+	}
+	#signupsubmit {
+		width: 27%;
+		margin: 0;
+	}
+	#AdvancedSearch{
+		position: static;
+		float: right;
+	}
+	#AdvancedSearch-hidden{
+		margin-top: 0;	
+	}
+	
+	#prodSlide_bg{
+		display: none;
+	}
+	#catalog-CTA{
+		display: none;	
+	}
+	
+	
+	/* product pages */
+	
+	
+	/* side bar */
+	.prodFull_sidebar_top, .prodFull_sidebar a.service-manual, .prodFull_sidebar a.print-spec-sheet, .prodFull_sidebar a.icon-manual{
+		display: none;	
+	}
+	.prodFull_sidebar a.email{
+		border-right: 0;
+
+	}
+	.d-1of4{
+		width: 100%;
+		padding: 0;
+		background: #fff;
+		
+	}
+	
+	.prodFull_sidebar_grid{
+		float: left;	
+		width: 100.2%;
+		background: #fff;
+		
+
+	}
+	.prodFull_sidebar_grid a{
+		width: 33.5%;
+		float: left;
+		height: 110px;
+		padding: 12px;
+	}
+	.prodFull_sidebar p {
+		padding: 0 20px;
+	}
+	
+	/* main content */
+	.prodFull_content{
+		clear: both;
+		margin: 0;
+	}
+	.bx-wrapper{
+		padding-top: 50px;	
+	}
+	#bx-pager {
+		display: none;
+	}
+	.bx-wrapper .bx-controls-direction a {
+		top: 15px;
+	}
+	
+	.relatedBox {
+		height: auto;
+		text-align: center;
+	}
+	.relatedBox img{
+		margin: 0px;
+		text-align: left;
+		margin-top: 20px;	
+	}
+	.relatedBox a p{
+		margin: 0px;
+		text-align: left;	
+	}
+
+	/* news */
+	.newsSidebar {
+		top: 0;
+	}
+	.shareRight{
+		margin-left: 0;	
+	}
+	.hentry footer {
+		border-top: 0;
+		padding: 0 0 1.5em 1.5em;
+	}
+
+
+	/* sign up */
+	#signup{
+		height: auto;
+		padding: 10px 0;	
+	}
+	#signup h2{
+		display: block;
+		font-size: 13px;
+		margin-bottom: 10px;	
+	}
+	input[type="text"] {
+		width: 68%;
+	}
+	
+	#signup input[type="submit"] {
+		margin-right: 0px;
+		top: -7px;
+		width: 32%;
+	}
+	.rightfloat{
+		text-align: left;	
+	}
+	#signup span {
+		margin-left: 15px;
+	
+	}
+
+
+	/* footer */
+	.d-1of6{
+		display: none;	
+	}
+	.footer {
+		height: 0px;
+		margin-top: 0;
+	}
+	#inner-footer {
+		padding-top: 10px;
+	}
+	.copyright{
+		position: static;
+		padding-left: 15px;
+	}
+
+}
+
+
+
+
+/* end .footer-links */
+/*********************
+LARGER MOBILE DEVICES
+This is for devices like the Galaxy Note or something that's
+larger than an iPhone but smaller than a tablet. Let's call them
+tweeners.
+*********************/
+@media only screen and (min-width: 481px) {
+  /******************************************************************
+  Site Name:
+  Author:
+  
+  Stylesheet: 481px and Up Stylesheet
+  
+  This stylesheet is loaded for larger devices. It's set to
+  481px because at 480px it would load on a landscaped iPhone.
+  This isn't ideal because then you would be loading all those
+  extra styles on that same mobile connection.
+  
+  A word of warning. This size COULD be a larger mobile device,
+  so you still want to keep it pretty light and simply expand
+  upon your base.scss styles.
+  
+  ******************************************************************/
+  /*
+  IMPORTANT NOTE ABOUT SASS 3.3 & UP
+  You can't use @extend within media queries
+  anymore, so just be aware that if you drop
+  them in here, they won't work.
+  */
+  /*********************
+  NAVIGATION STYLES
+  *********************/
+  /* .menu is clearfixed inside mixins.scss */
+  .menu {
+    /* end .menu ul */
+  }
+  .menu ul {
+    /* end .menu ul li */
+    /* highlight current page */
+    /* end current highlighters */
+  }
+  .menu ul li {
+    /*
+    plan your menus and drop-downs wisely.
+    */
+  }
+  .menu ul li a {
+    /*
+    you can use hover styles here even though this size
+    has the possibility of being a mobile device.
+    */
+  }
+
+  /* end .menu */
+
+  
+  /*********************
+  POSTS & CONTENT STYLES
+  *********************/
+  /* entry content */
+  .entry-content {
+    /* at this larger size, we can start to align images */
+  }
+  .entry-content .alignleft, .entry-content img.alignleft {
+    margin-right: 1.5em;
+    display: inline;
+    float: left;
+  }
+  .entry-content .alignright, .entry-content img.alignright {
+    margin-left: 1.5em;
+    display: inline;
+    float: right;
+  }
+  .entry-content .aligncenter, .entry-content img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+  }
+
+  /* end .entry-content */
+  /*********************
+  FOOTER STYLES
+  *********************/
+  /*
+  check your menus here. do they look good?
+  do they need tweaking?
+  */
+  /* end .footer-links */
+}
+/*********************
+TABLET & SMALLER LAPTOPS
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*********************/
+@media only screen and (min-width: 768px) {
+  /******************************************************************
+  Site Name:
+  Author:
+  
+  Stylesheet: Tablet & Small Desktop Stylesheet
+  
+  Here's where you can start getting into the good stuff.
+  This size will work on iPads, other tablets, and desktops.
+  So you can start working with more styles, background images,
+  and other resources. You'll also notice the grid starts to
+  come into play. Have fun!
+  
+  ******************************************************************/
+  /*********************
+  GENERAL STYLES
+  *********************/
+  /*********************
+  LAYOUT & GRID STYLES
+  *********************/
+    .wrap {
+    width: 1100px;
+  }
+
+  /*********************
+  HEADER STYLES
+  *********************/
+  /*********************
+  NAVIGATION STYLES
+  *********************/
+  .nav {
+    border: 0;
+    /* end .menu ul li */
+    /* highlight current page */
+    /* end current highlighters */
+  }
+  .nav ul {
+    background: black;
+    margin-top: 0;
+  }
+  .nav li {
+    float: left;
+    position: relative;
+    /*
+    plan your menus and drop-downs wisely.
+    */
+    /* showing sub-menus */
+  }
+  .nav li a {
+    border-bottom: 0;
+    /*
+    you can use hover styles here even though this size
+    has the possibility of being a mobile device.
+    */
+  }
+  .nav li a:hover, .nav li a:focus {
+    color: white;
+    text-decoration: underline;
+  }
+  .nav li ul.sub-menu,
+  .nav li ul.children {
+    margin-top: 0;
+    border: 1px solid #ccc;
+    border-top: 0;
+    position: absolute;
+    visibility: hidden;
+    z-index: 8999;
+    /* highlight sub-menu current page */
+  }
+  .nav li ul.sub-menu li,
+  .nav li ul.children li {
+    /*
+    if you need to go deeper, go nuts
+    just remember deeper menus suck
+    for usability. k, bai.
+    */
+  }
+  .nav li ul.sub-menu li a,
+  .nav li ul.children li a {
+    padding-left: 10px;
+    border-right: 0;
+    display: block;
+    width: 180px;
+    border-bottom: 1px solid #ccc;
+  }
+  .nav li ul.sub-menu li:last-child a,
+  .nav li ul.children li:last-child a {
+    border-bottom: 0;
+  }
+  .nav li ul.sub-menu li ul,
+  .nav li ul.children li ul {
+    top: 0;
+    left: 100%;
+  }
+  .nav li:hover > ul {
+    top: auto;
+    visibility: visible;
+  }
+
+  /* end .nav */
+  /*********************
+  SIDEBARS & ASIDES
+  *********************/
+  .sidebar {
+    margin-top: 2.2em;
+  }
+
+  .widgettitle {
+    border-bottom: 2px solid #444;
+    margin-bottom: 0.75em;
+  }
+
+  .widget {
+    padding: 0 10px;
+    margin: 2.2em 0;
+  }
+  .widget ul li {
+    margin-bottom: 0.75em;
+    /* deep nesting */
+  }
+  .widget ul li ul {
+    margin-top: 0.75em;
+    padding-left: 1em;
+  }
+
+  /* links widget */
+  /* meta widget */
+  /* pages widget */
+  /* recent-posts widget */
+  /* archives widget */
+  /* tag-cloud widget */
+  /* calendar widget */
+  /* category widget */
+  /* recent-comments widget */
+  /* search widget */
+  /* text widget */
+  /*********************
+  FOOTER STYLES
+  *********************/
+  /*
+  you'll probably need to do quite a bit
+  of overriding here if you styled them for
+  mobile. Make sure to double check these!
+  */
+  .footer-links ul li {
+    /*
+    be careful with the depth of your menus.
+    it's very rare to have multi-depth menus in
+    the footer.
+    */
+  }
+
+  /* end .footer-links */
+}
+/*********************
+DESKTOP
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*********************/
+@media only screen and (min-width: 1030px) {
+  /******************************************************************
+  Site Name:
+  Author:
+  
+  Stylesheet: Desktop Stylsheet
+  
+  This is the desktop size. It's larger than an iPad so it will only
+  be seen on the Desktop.
+  
+  ******************************************************************/
+  .wrap {
+    width: 1100px;
+  }
+
+  .nav {
+    border-bottom: 0;
+    margin: 0 auto;
+    width: 1100px;
+    /* end .menu li */
+    /* highlight current page */
+    /* end current highlighters */
+  }
+  .nav li {
+    /*
+    so you really have to rethink your dropdowns for mobile.
+    you don't want to have it expand too much because the
+    screen is so small. How you manage your menu should
+    depend on the project. Here's some great info on it:
+    http://www.alistapart.com/articles/organizing-mobile/
+    */
+  }
+  .nav li a {
+   	background: none repeat scroll 0 0 #3c80c2;
+    color: white;
+    display: block;
+    font-family: "nimbus-sans-condensed","HelveticaNeue",Helvetica,Arial,sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 1px;
+    padding: 0 28px;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    letter-spacing: .6px;
+	cursor: pointer;
+  }
+  .nav li a:hover, .nav li a:focus {
+    text-decoration: none !important;
+    background: #538fca;
+  }
+  .nav li ul.sub-menu li a,
+  .nav li ul.children li a {
+    padding-left: 30px;
+  }
+
+  /* end .nav */
+}
+/*********************
+LARGE VIEWING SIZE
+This is for the larger monitors and possibly full screen viewers.
+*********************/
+@media only screen and (min-width: 1240px) {
+  /******************************************************************
+  Site Name: 
+  Author: 
+  
+  Stylesheet: Super Large Monitor Stylesheet
+  
+  You can add some advanced styles here if you like. This kicks in
+  on larger screens.
+  
+  ******************************************************************/
+}
+/*********************
+RETINA (2x RESOLUTION DEVICES)
+This applies to the retina iPhone (4s) and iPad (2,3) along with
+other displays with a 2x resolution. You can also create a media
+query for retina AND a certain size if you want. Go Nuts.
+*********************/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /******************************************************************
+  Site Name: 
+  Author: 
+  
+  Stylesheet: Retina Screens & Devices Stylesheet
+  
+  When handling retina screens you need to make adjustments, especially
+  if you're not using font icons. Here you can add them in one neat
+  place.
+  
+  ******************************************************************/
+  /* 
+  
+  EXAMPLE 
+  Let's say you have an image and you need to make sure it looks ok
+  on retina screens. Let's say we have an icon which dimension are
+  24px x 24px. In your regular stylesheets, it would look something
+  like this:
+  
+  .icon {
+  	width: 24px;
+  	height: 24px;
+  	background: url(img/test.png) no-repeat;
+  }
+  
+  For retina screens, we have to make some adjustments, so that image
+  doesn't look blurry. So, taking into account the image above and the
+  dimensions, this is what we would put in our retina stylesheet:
+  
+  .icon {
+  	background: url(img/test@2x.png) no-repeat;
+  	background-size: 24px 24px;
+  }
+  
+  So, you would create the same icon, but at double the resolution, meaning 
+  it would be 48px x 48px. You'd name it the same, but with a @2x at the end
+  (this is pretty standard practice). Set the background image so it matches
+  the original dimensions and you are good to go. 
+  
+  */
+}
+/*********************
+PRINT STYLESHEET
+Feel free to customize this. Remember to add things that won't make
+sense to print at the bottom. Things like nav, ads, and forms should
+be set to display none.
+*********************/
+@media print {
+  /******************************************************************
+  Site Name:
+  Author:
+  
+  Stylesheet: Print Stylesheet
+  
+  This is the print stylesheet. There's probably not a lot
+  of reasons to edit this stylesheet. If you want to
+  though, go for it.
+  
+  ******************************************************************/
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+  a:after, a:visited:after {
+    content: " (" attr(href) ")";
+  }
+  a abbr[title]:after, a:visited abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  .sidebar,
+  .page-navigation,
+  .wp-prev-next,
+  .respond-form,
+  nav {
+    display: none;
+  }
+}
